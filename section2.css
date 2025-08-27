@@ -9,16 +9,28 @@
     align-items: center;
     gap: 40px;
     padding: 20px 0;
+    margin-bottom: -10px;
 }
 
 .conteudo-texto {
 
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     color: #fff;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 20px;
+    font-weight: 700;
 }
+
+.conteudo-texto2{
+    font-size: 1.2rem;
+        color: #fff;
+        text-align: center;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
 
 .chefs {
 
