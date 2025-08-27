@@ -1,6 +1,7 @@
+/* ==========================================================================
+   BREAKPOINT PARA TABLETS E DISPOSITIVOS MENORES (ATÉ 991px)
+   ========================================================================== */
 @media (max-width: 991px) {
-
-
     .cabecalho {
         flex-direction: column;
         padding: 15px 20px;
@@ -17,11 +18,6 @@
         margin-top: 10px;
     }
 
-    .logo {
-        width: 160px;
-    }
-
-
     .conteudo-principal {
         flex-direction: column;
         text-align: center;
@@ -31,14 +27,6 @@
 
     .conteudo-principal-escrito {
         align-items: center;
-    }
-
-    .texto-principal {
-        font-size: 3rem;
-    }
-
-    .texto-secundario {
-        font-size: 1.5rem;
     }
 
     .descricao {
@@ -66,8 +54,14 @@
     .unidades {
         width: 90%;
         margin: 40px auto;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .unidades ul {
+        padding-left: 0;
     }
 
     .enderecos {
@@ -79,9 +73,9 @@
         padding: 30px 20px;
     }
 
-    .conteudo-texto {
-        font-size: 1rem;
-        margin: 0 20px;
+    .conteudo-texto2 {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .chefs {
@@ -90,40 +84,9 @@
         justify-content: center;
     }
 
-    .chef-img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .whats-btn {
-        font-size: 1rem;
-        padding: 15px;
-    }
-
-    .conteudo-quarto {
-        padding: 30px 15px;
-        gap: 30px;
-    }
-
-    .about-main-text {
-        font-size: 1.5rem;
-    }
-
-    .about-text {
-        font-size: 3rem;
-    }
-
     .about-grid {
         grid-template-columns: 1fr;
         gap: 20px;
-    }
-
-    .experiencia {
-        font-size: 0.9rem;
-    }
-
-    .footer {
-        padding: 40px 15px 20px;
     }
 
     .footer-content {
@@ -142,79 +105,70 @@
     }
 }
 
-
+/* ==========================================================================
+   BREAKPOINT PARA CELULARES GRANDES E TABLETS PEQUENOS (ATÉ 768px)
+   ========================================================================== */
 @media (max-width: 768px) {
-
-
     body {
         font-size: 0.9rem;
-
     }
 
-
-    .cabecalho {
-        padding: 10px 15px;
-    }
-
-    .lista-menu {
-        gap: 10px;
+    .logo {
+        width: 160px;
     }
 
     .texto-principal {
         font-size: 2.5rem;
     }
 
-    .banner1 {
-        border-radius: 10px;
+    .texto-secundario {
+        font-size: 1.5rem;
     }
-
 
     .unidades {
         width: 100%;
         padding: 0 15px;
     }
 
+    .enderecos {
+        align-items: flex-start;
+        gap: 0.5rem 0.5rem;
+    }
+
+    .enderecos .bi-geo-alt-fill {
+        margin-top: 5px;
+        align-self: flex-start;
+    }
 
     .chef-img {
         width: 130px;
         height: 130px;
     }
 
-
     .about-text {
         font-size: 2.5rem;
+    }
+
+    .about-main-text {
+        font-size: 1.5rem;
     }
 
     .about-div {
         padding: 20px;
     }
 
-
     .footer-links a:hover {
         padding-left: 0;
-
     }
 }
 
-
+/* ==========================================================================
+   BREAKPOINT PARA CELULARES MÉDIOS (ATÉ 480px)
+   ========================================================================== */
 @media (max-width: 480px) {
-
-
     .logo {
         width: 140px;
-
     }
-
-
-
-    .lista-menu {
-        gap: 8px;
-    }
-
-    .item-lista a {
-        font-size: 0.9rem;
-    }
-
 
     .texto-principal {
         font-size: 2rem;
@@ -228,11 +182,9 @@
         font-size: 0.8rem;
     }
 
-
     .enderecos-text {
         font-size: 0.85rem;
     }
-
 
     .conteudo-texto {
         font-size: 0.9rem;
@@ -249,7 +201,6 @@
         padding: 12px;
     }
 
-
     .about-main-text {
         font-size: 1.2rem;
     }
@@ -261,33 +212,15 @@
     .experiencia {
         font-size: 0.85rem;
     }
-
-
-    .footer-title {
-        font-size: 1.1rem;
-    }
-
-    .footer-description,
-    .footer-address {
-        font-size: 0.8rem;
-    }
-
-    .footer-socials a {
-        font-size: 1.2rem;
-        margin-right: 15px;
-    }
 }
 
-
+/* ==========================================================================
+   BREAKPOINT PARA CELULARES PEQUENOS (ATÉ 420px)
+   ========================================================================== */
 @media (max-width: 420px) {
-
-
     .logo {
         width: 120px;
-
     }
-
-
 
     .conteudo-principal {
         padding: 15px;
@@ -296,7 +229,6 @@
     .texto-principal {
         font-size: 1.8rem;
     }
-
 
     .chefs {
         gap: 20px;
@@ -320,16 +252,5 @@
 
     .footer-content {
         gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .enderecos {
-        align-items: flex-start; 
-        gap: 0.5rem 0.5rem;  
-    }
-    .enderecos .bi-geo-alt-fill {
-        margin-top: 5px;       
-        align-self: flex-start;
     }
 }
