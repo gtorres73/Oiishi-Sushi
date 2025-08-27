@@ -1,0 +1,335 @@
+@media (max-width: 991px) {
+
+
+    .cabecalho {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .lista-menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .item-lista-btn {
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+
+    .conteudo-principal {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .conteudo-principal-escrito {
+        align-items: center;
+    }
+
+    .texto-principal {
+        font-size: 3rem;
+    }
+
+    .texto-secundario {
+        font-size: 1.5rem;
+    }
+
+    .descricao {
+        width: 100%;
+    }
+
+    .banner1 {
+        max-width: 100%;
+        order: -1;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .btns a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .unidades {
+        width: 90%;
+        margin: 40px auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .enderecos {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .conteudo-chefs {
+        padding: 30px 20px;
+    }
+
+    .conteudo-texto {
+        font-size: 1rem;
+        margin: 0 20px;
+    }
+
+    .chefs {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .chef-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .whats-btn {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .conteudo-quarto {
+        padding: 30px 15px;
+        gap: 30px;
+    }
+
+    .about-main-text {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 3rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .experiencia {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding: 40px 15px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    body {
+        font-size: 0.9rem;
+
+    }
+
+
+    .cabecalho {
+        padding: 10px 15px;
+    }
+
+    .lista-menu {
+        gap: 10px;
+    }
+
+    .texto-principal {
+        font-size: 2.5rem;
+    }
+
+    .banner1 {
+        border-radius: 10px;
+    }
+
+
+    .unidades {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+
+    .chef-img {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    .about-text {
+        font-size: 2.5rem;
+    }
+
+    .about-div {
+        padding: 20px;
+    }
+
+
+    .footer-links a:hover {
+        padding-left: 0;
+
+    }
+}
+
+
+@media (max-width: 480px) {
+
+
+    .logo {
+        width: 140px;
+
+    }
+
+
+
+    .lista-menu {
+        gap: 8px;
+    }
+
+    .item-lista a {
+        font-size: 0.9rem;
+    }
+
+
+    .texto-principal {
+        font-size: 2rem;
+    }
+
+    .texto-secundario {
+        font-size: 1.2rem;
+    }
+
+    .descricao {
+        font-size: 0.8rem;
+    }
+
+
+    .enderecos-text {
+        font-size: 0.85rem;
+    }
+
+
+    .conteudo-texto {
+        font-size: 0.9rem;
+        margin: 0 15px;
+    }
+
+    .chef-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .whats-btn {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+
+    .about-main-text {
+        font-size: 1.2rem;
+    }
+
+    .about-text {
+        font-size: 2rem;
+    }
+
+    .experiencia {
+        font-size: 0.85rem;
+    }
+
+
+    .footer-title {
+        font-size: 1.1rem;
+    }
+
+    .footer-description,
+    .footer-address {
+        font-size: 0.8rem;
+    }
+
+    .footer-socials a {
+        font-size: 1.2rem;
+        margin-right: 15px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+
+    .logo {
+        width: 120px;
+
+    }
+
+
+
+    .conteudo-principal {
+        padding: 15px;
+    }
+
+    .texto-principal {
+        font-size: 1.8rem;
+    }
+
+
+    .chefs {
+        gap: 20px;
+    }
+
+    .chef-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-div .bi-star,
+    .about-div .bi-leaf,
+    .about-div .bi-globe-americas,
+    .about-div .bi-person-heart {
+        font-size: 2rem;
+    }
+
+    .footer {
+        padding: 30px 10px 15px;
+    }
+
+    .footer-content {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .enderecos {
+        align-items: flex-start; 
+        gap: 0.5rem 0.5rem;  
+    }
+    .enderecos .bi-geo-alt-fill {
+        margin-top: 5px;       
+        align-self: flex-start;
+    }
+}

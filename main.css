@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    margin: auto;
+    max-width: 1120px;
+    gap: 2rem;
+
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img-logo-principal {
+    width: 300px;
+    height: auto;
+
+}
+
+.texto-principal {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Ephesis", cursive;
+    padding-bottom: 10px;
+    background: linear-gradient(to right, #db2e34, #851926);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.descricao {
+    width: 340px;
+}
+
+.btns a {
+    background-color: #db2e34;
+    padding: 10px;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.5s ease;
+
+}
+
+.btns a:hover {
+    background-color: #851926;
+    color: black;
+}
+
+.banner1 {
+    max-width: 50%;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+
+.unidades {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1120px;
+    margin: 30px 350px;
+    color: white;
+    font-weight: 500;
+}
+
+.enderecos {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    align-items: center;
+    gap: 1rem 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.enderecos-text {
+    padding: 0;
+    color: #fff;
+    transition: 0, 5s ease
+}
+
+.enderecos:hover .enderecos-text,
+.enderecos:hover .bi.bi-geo-alt-fill {
+    color: #851926;
+    transition: 0, 5s ease;
+
+}
+
+@media (max-width: 768px) {
+
+    .enderecos {
+        align-items: flex-start;
+        gap: 0.5rem 0.5rem;
+    }
+
+    .enderecos .bi-geo-alt-fill {
+        margin-top: 5px;
+        align-self: flex-start;
+    }
+}

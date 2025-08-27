@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+.conteudo-cardapio {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    gap: 50px;
+}
+
+
+.conteudo-cardapio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/background-cardapio.jpg) no-repeat center center;
+    background-size: cover;
+    filter: blur(5px) brightness(0.5);
+    z-index: -1;
+}
+
+.titulo-cardapio {
+    margin-bottom: 20px;
+}
+
+.cardapio-main-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.img-logo-cardapio {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.cardapio-subtexto {
+    font-family: "Ephesis", cursive;
+    font-size: 3rem;
+    color: #c5c5c5;
+}
+
+
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.cardapio-categoria {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cardapio-categoria h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #db2e34;
+    margin-bottom: 10px;
+}
+
+.cardapio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.item-info h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+
+.item-descricao {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #c5c5c5;
+    margin: 0;
+}
+
+.item-preco {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #db2e34;
+    white-space: nowrap;
+ 
+}
+
+
+@media (max-width: 768px) {
+    .cardapio-main-text {
+        font-size: 2rem;
+    }
+
+    .cardapio-subtexto {
+        font-size: 2.2rem;
+    }
+
+    .conteudo-cardapio {
+        padding: 60px 15px;
+    }
+}
